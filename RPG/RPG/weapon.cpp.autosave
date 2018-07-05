@@ -1,0 +1,11 @@
+#include "weapon.h"
+#include <stdlib.h>
+
+
+Gun::Gun(QGraphicsItem *parent)
+{
+    setPixmap(QPixmap(":/image/gun.png"));
+    int x=rand()%1000;
+    int y=rand()%1000;
+    setPos(x,y);
+}
